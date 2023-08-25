@@ -361,7 +361,26 @@ grid {
 }
 
 /*=============== CASE ===============*/
+.case__container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.case__data {
+  padding: 5rem 0 3rem;
+}
+
+.case__img {
+  width: 250px;
+  position: absolute;
+  left: -7rem;
+}
+
+.case__description {
+  margin-bottom: var(--mb-1-5);
+  line-height: var(--text-line-height);
+}
 
 /*=============== DISCOUNT ===============*/
 
