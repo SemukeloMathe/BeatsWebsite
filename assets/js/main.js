@@ -20,7 +20,15 @@ if (navClose) {
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelector(".nav__link");
 
+function linkAction() {
+  const navMenu = document.getElementById("nev-menu");
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove("show-menu");
+}
+
+navLink.forEach(n => n.addEventListener("click", linkAction));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
